@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-    FaDribbbleSquare,
-    FaFacebookSquare,
-    FaGithubSquare,
-    FaInstagram,
-    FaTwitterSquare,
-} from 'react-icons/fa';
+import { FaFacebookSquare, FaGithubSquare, FaInstagram, FaTwitterSquare, } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -15,7 +9,7 @@ const Footer = () => {
                 <p className='py-4'>At Education Point, we empower everyone to master web technology.
                     Our comprehensive courses and expert instructors make learning web development accessible and engaging for all.
                     Start your journey to web mastery with us today</p>
-                <div className='flex justify-between md:w-[75%] my-6'>
+                <div className='flex justify-between md:w-[75%] my-6 '>
                     <FaFacebookSquare size={30} />
                     <FaInstagram size={30} />
                     <FaTwitterSquare size={30} />
