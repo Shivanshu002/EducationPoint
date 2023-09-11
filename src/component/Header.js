@@ -1,4 +1,4 @@
-import { BsMenuButtonFill } from 'react-icons/bs';
+import { MdMenuOpen } from 'react-icons/md';
 import { AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
 
@@ -7,16 +7,16 @@ function Header() {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <div className="bg-[#2699fb] p-4">
+        <div className="bg-[#476bf8] p-4">
             <div className="max-w-[1240px] mx-auto flex flex-row justify-between items-center py-[15px] ">
-                <div className="text-3xl">
-                    Learn Online
+                <div className="text-3xl font-bold font-serif">
+                    eDUCATION pOINT
                 </div>
                 {
                     toggle ?
-                    <AiOutlineClose onClick={() => setToggle(!toggle)} className='text-white text-2xl md:hidden block' />
-                    :
-                    <BsMenuButtonFill onClick={() => setToggle(!toggle)} className=' text-white text-2xl md:hidden block' />
+                        <AiOutlineClose onClick={() => setToggle(!toggle)} className='text-white text-2xl md:hidden block' />
+                        :
+                        <MdMenuOpen onClick={() => setToggle(!toggle)} className=' text-white text-2xl md:hidden block' />
                 }
 
                 <ul className='hidden md:flex text-white'>
